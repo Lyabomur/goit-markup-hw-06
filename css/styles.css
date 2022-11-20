@@ -301,6 +301,25 @@ body {
     background-color: #2196F3;
 }
 
+.form{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.form-title{
+
+}
+
+.label{
+
+}
+
+.input{
+
+}
+
+.form-button
+
 /* секція перваги*/
 
 .benefits .list {
