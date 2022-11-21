@@ -325,7 +325,7 @@ body {
 }
 
 .label{
-  display: inline;
+  display: block;
   margin-left:40px;
   font-weight: 400;
   font-size: 12px;
