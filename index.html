@@ -483,23 +483,36 @@
                 
         <div>
           <label class="label"> Імя
-            <div class="form-field">
+            <p class="form-field">
               <input class="input" type="text" name="name">
               <svg class="svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </div>
+            </p>
           </label>
         </div>
 
-        <label class="label"> Телефон
-          <input class="input" type="tel" name="tel">
-          
-        </label>
+        <div>
+          <label class="label"> Телефон
+            <p class="form-field">
+              <input class="input" type="tel" name="tel">
+              <svg class="svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </p>
+          </label>
+        </div>
       
-        <label class="label"> Пошта
-          <input class="input" type="email" name="email">
-        </label>
+        <div>
+          <label class="label"> Пошта
+            <p class="form-field">
+              <input class="input" type="email" name="email">
+              <svg class="svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </p>
+          </label>
+        </div>
 
         <label class="label"> Коментар
           <textarea class="textarea"
@@ -510,8 +523,8 @@
         </label>
 
         <label class="checkbox"> 
-          <input class="" type="checkbox" name="checkbox">
-        Погоджуюся з розсилкою та приймаю Умови договору
+          <input class="" type="checkbox" name="checkbox" checked>
+        Погоджуюся з розсилкою та приймаю <span class="form-span">Умови договору</span>
         </label>
 
         <button class="form-button" type="submit">Відправити</button>

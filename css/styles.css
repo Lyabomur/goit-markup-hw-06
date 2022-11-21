@@ -336,10 +336,11 @@ body {
 
 .form-field{
     position: relative;
+    margin: 0;
 }
 
+
 .input{
-  /* position: relative;   */
   padding: 11px 42px;
   margin-bottom: 10px;
   margin-top: 4px;
@@ -348,13 +349,22 @@ body {
   width: 448px;
   height: 40px;
   cursor: pointer;
+  outline-style: none;
+}
+
+.input:focus{
+    border:1px solid var(--acent-color);
 }
 
 .svg{
     position: absolute;
-    top: 50%;
-    left:10px;
-    transform: translateY(-50%);
+    top: 45%;
+    left:12px;
+    transform: translateY(-45%);
+}
+
+.input:focus + .svg{
+    fill: var(--acent-color);
 }
 
 .textarea{
@@ -366,11 +376,16 @@ body {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-style: none;
   font-weight: 400;
   font-size: 12px;
   line-height:calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.textarea:focus{
+    border:1px solid var(--acent-color);
 }
 
 .checkbox{
@@ -384,6 +399,11 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color:var(--second-text-color);
+}
+
+.form-span{
+    color: var(--acent-color);
+    text-decoration-line:underline ;
 }
 
 .form-button{
