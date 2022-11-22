@@ -346,15 +346,16 @@ body {
   transition: border 250ms var(--time-function);
 }
 
-.input:focus{
+.input:focus,
+.input:hover{
     border:1px solid var(--acent-color);
 }
 
 .svg{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left:12px;
-    transform: translateY(-45%);
+    transform: translateY(-35%);
     transition: fill 250ms var(--time-function);
 }
 
@@ -423,7 +424,8 @@ body {
 
 .form-span{
     color: var(--acent-color);
-    text-decoration-line:underline ;
+    text-decoration: underline;
+    margin-left: 4px;
 }
 
 .form-button{
