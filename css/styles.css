@@ -267,7 +267,7 @@ body {
     transition: transform 250ms var(--time-function);
     min-width: 521px;
     min-height: 581px;
-    padding: 8px;
+    
     background: var(--bgc-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -302,16 +302,12 @@ body {
 }
 
 .form{
-    display: inline-flex;
-    flex-direction: column;
-}
+  padding: 40px;
+    }
 
 .form-title{
-  font-style: normal;
   font-weight: 700;
-  margin-top: 34px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin:0;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -320,31 +316,25 @@ body {
   color: var(--main-color)
 }
 
-.label-box{
-
-}
-
 .label{
-  display: block;
-  margin-left:40px;
+  display:flex;
   font-weight: 400;
   font-size: 12px;
   line-height:calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--second-text-color)
-
 }
 
 .form-field{
-    position: relative;
-    margin-left: 40px;
-    margin-right: 40px;
+   position: relative;
+   display: inline-block;
+   margin-bottom: 10px;
 }
 
 
 .input{
   padding: 11px 42px;
-  margin-bottom: 10px;
+  
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;  
@@ -377,8 +367,6 @@ body {
   height: 120px;
   margin-bottom: 20px;
   margin-top: 4px;
-  margin-left: 40px;
-  margin-right: 40px;
   padding: 12px 16px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -402,12 +390,12 @@ body {
   align-items: center;
   width: 423px;
   height: 24px;
-  margin-bottom: 30px;
-  margin-left: 52px;
-  font-style: normal;
+  margin-bottom: 34px;
+  margin-left: 12px;
+  
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color:var(--second-text-color);
 }
@@ -441,13 +429,13 @@ body {
 .form-button{
   width: 200px;
   height: 50px;
-  margin-left: 164px;
-  margin-bottom: 46px;
+  margin-left: 124px;
+  margin-right: 124px;
   padding: 10px 52px;
-  border: 0;
+  border: none;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height:calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--bgc-white);
 
@@ -1076,9 +1064,14 @@ margin: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  transition: drop-shadow 250ms var(--time-function);
+  transition: drop-shadow 250ms var(--time-function),
+  border-color 250ms var(--time-function);
 }
 
+.footer-input:focus,
+.footer-input:hover{
+    border-color:var(--bgc-white)
+}
 
 .footer-button{
   display: inline-flex;
